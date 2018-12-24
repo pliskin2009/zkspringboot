@@ -11,7 +11,7 @@ public class ZkScopeConfigurer extends CustomScopeConfigurer {
 	private static final Logger logger = LoggerFactory.getLogger(ZkScopeConfigurer.class);
 
 	public ZkScopeConfigurer() {
-		logger.info("ZK-Springboot: Registering custom scopes ('zk-application', 'desktop')");
+		logger.info("ZK-Springboot: Registering custom scopes ('webapp', 'desktop', 'execution')");
 		addScope("webapp", new WebAppScope());
 		addScope("desktop", new DesktopScope());
 		addScope("execution", new ExecutionScope());
